@@ -1,0 +1,11 @@
+; TDE syntax highlighting to play Sudoku.
+
+integer grey		; possibilities
+normal white		; confirmed
+symbol yellow		; grid
+
+language sudoku
+pattern *
+;startword џ
+startword плм
+inword плм

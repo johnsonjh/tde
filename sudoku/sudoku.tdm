@@ -1,0 +1,5 @@
+; TDE startup macro to play Sudoku.
+
+ToggleReadOnly
+Right Down LineUp
+b

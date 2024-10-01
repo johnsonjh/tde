@@ -1,0 +1,29 @@
+ษออออออออออออออออออออออออออออออออออออออออป
+บ Please start TDE with "-e sudoku.tdm"  บ
+บ or use Sudoku.bat.                     บ
+ศออออออออออออออออออออออออออออออออออออออออผ
+<<<>>>
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ                                                                           บ
+บ                             ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ                            บ
+บ                             ณ     SUDOKU     ณ                            บ
+บ                             ณ A Game for TDE ณ                            บ
+บ                             ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู                            บ
+บ                                                                           บ
+บ  This is a set of files to assist you in playing Sudoku.  To use it, run  บ
+บ  TDE like this: "tde -e sudoku.tdm gamefile".  GAMEFILE can be obtained   บ
+บ  by copying SUDOKU.NEW to a new file.                                     บ
+บ                                                                           บ
+บ  Left/Right/Up/Down: change squares                      Ctrl+R: revert   บ
+บ  Home/End:   first/last square in the row                Ctrl+S: save as  บ
+บ  PgUp/PgDn:  first/last square in the column       Shift+Ctrl+S: save     บ
+บ  Center:     the middle square of the middle box                          บ
+บ  1 to 9:     the number for a correct square                              บ
+บ  with shift: removes possibility from the current square                  บ
+บ                                                                           บ
+บ  The color of the current square can be changed by editing TDE.CFG.       บ
+บ  The grid, number and possibility colors are in TDE.SHL.                  บ
+บ                                                                           บ
+บ  Note: Sudoku is best played with a screen size of 43 lines (or more).    บ
+บ                                                                           บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
