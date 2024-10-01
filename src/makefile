@@ -35,12 +35,12 @@ endif
 endif
 
 # Should the executable/binary be stripped?
-STRIP = strip
-#STRIP = true
+#STRIP = strip
+STRIP = true
 
 # Should the executable be compressed?
-DJP = upx -9 -qq	# djgpp users should use v1.23.
-#DJP = true
+#DJP = upx -9 -qq	# djgpp users should use v1.23.
+DJP = true
 
 # Comment the following to see the compilation commands.
 BRIEF = @
@@ -54,10 +54,17 @@ VER = 51
 endif
 endif
 
-CFLAGS	= -Wall -g
+# Architecture
+ARCHFLG ?= -m32
+
+# CFLAGS
+CFLAGS += -Wall -g
 CFLAGS += -O2 -finline-functions
-CFLAGS += -mtune=pentiumpro -fomit-frame-pointer
+CFLAGS += $(ARCHFLG)  -fomit-frame-pointer
 CFLAGS += -DNDEBUG
+
+# LDFLAGS
+LDFLAGS += $(ARCHFLG)
 
 ifeq ($(OS),unix)
 CFLAGS += -D__UNIX__
@@ -80,7 +87,7 @@ endif
 LIBS	=
 endif
 
-CC = gcc
+CC ?= cc
 
 VPATH	 = $(OS)
 CPPFLAGS = -I.
@@ -106,7 +113,7 @@ $(PROJ): $(OBJECTS)
 ifdef BRIEF
 	@echo Creating $(PROJ)
 endif
-	$(BRIEF)$(CC) -o $@ $^ $(LIBS)
+	$(BRIEF)$(CC) -o $@ $^ $(LDFLAGS) $(LIBS)
 
 $(OS)/bj_ctype.o:  bj_ctype.c bj_ctype.h tdestr.h common.h
 $(OS)/block.o:	   block.c    $(INC)
