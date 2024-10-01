@@ -14,7 +14,7 @@
 
     File Descriptions:
 
-        readme_s.txt    this file
+        readme.txt      this file
         bj_ctype.h      ctypes for non-English languages
         common.h        external global variable declarations
         config.h        structures for the config and syntax highlighting files
